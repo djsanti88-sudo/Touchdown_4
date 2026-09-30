@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt and Help | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <a class="brand" href="index.html"><img src="rescue-logo_c(2).png" alt="Twin Cities Animal Rescue logo"
+      width="180"></a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Adopt and Help</a></li>
+        <li><a href="about.html">About Our Rescue</a></li>
+        <li><a href="contact.html">Volunteer or Foster</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Ways to make a difference</h1>
+    <section class="interest-planner" aria-labelledby="planner-heading">
+      <h2 id="planner-heading">Find your way to help</h2>
+      <p>Choose an interest to see what it involves. We will remember your choice on this browser and fill it in on the interest form.</p>
+      <label for="help-choice">How would you like to help?</label>
+      <select id="help-choice">
+        <option value="">Choose an interest</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="foster">Foster</option>
+        <option value="adoption">Adoption information</option>
+      </select>
+      <div id="interest-result" aria-live="polite" aria-atomic="true"></div>
+      <p id="choice-status" role="status"></p>
+      <button id="clear-choice" type="button">Forget my choice</button>
+      <noscript><p>Visit the sections below and contact our team to explore ways to help.</p></noscript>
+    </section>
+    <div class="service-columns">
+    <section id="adoption" aria-labelledby="adoption-heading">
+      <h2 id="adoption-heading">Adoption</h2>
+      <img src="rescue-pet_c(2).png" alt="Brown guinea pig facing the camera" width="450">
+      <p>Start by learning about available pets and sharing what kind of home you can offer.
+        Our team can discuss a good match, answer questions, and explain the next steps before
+        an adoption is finalized.</p>
+      <p><a href="contact.html">Ask about adopting a pet</a>.</p>
+    </section>
+    <section id="foster" aria-labelledby="foster-heading">
+      <h2 id="foster-heading">Fostering</h2>
+      <p>Foster homes offer pets a temporary place to settle while they wait for adoption.
+        Tell us about your household, experience, and availability so we can discuss whether
+        fostering fits.</p>
+      <p><a href="contact.html">Share your foster interest</a>.</p>
+    </section>
+    <section id="volunteer" aria-labelledby="volunteer-heading">
+      <h2 id="volunteer-heading">Volunteering</h2>
+      <img src="rescue-volunteer_c(2).png" alt="Volunteer beside a golden dog at the rescue"
+        width="450">
+      <p>Volunteers may help with animal care, adoption events, transport, or community
+        outreach. We will match opportunities to your availability and the rescue's current
+        needs.</p>
+      <p><a href="contact.html">Ask about volunteer roles</a>.</p>
+    </section>
+    </div>
+  </main>
+  <footer><p>&copy; 2026 Twin Cities Animal Rescue</p></footer>
+</body>
+</html>

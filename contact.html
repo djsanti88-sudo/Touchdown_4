@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer or Foster | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <a class="brand" href="index.html"><img src="rescue-logo_c(2).png" alt="Twin Cities Animal Rescue logo"
+      width="180"></a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Adopt and Help</a></li>
+        <li><a href="about.html">About Our Rescue</a></li>
+        <li><a href="contact.html" aria-current="page">Volunteer or Foster</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <h1>Connect with the rescue</h1>
+    <p>Interested in volunteering, fostering, or adopting? Share a little about yourself and
+      what you are looking for. This class project checks your inquiry but does not send it to the rescue. Your draft stays in this browser tab until you clear it or close the tab.</p>
+    <div class="contact-columns">
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Interest form</h2>
+      <form id="interest-form" action="#" method="post">
+        <p id="draft-status" role="status"></p>
+        <fieldset>
+          <legend>Your contact information</legend>
+          <p><label for="full-name">Full name</label><br>
+          <input id="full-name" name="full-name" type="text" autocomplete="name" required
+            minlength="2">
+          <span id="full-name-error" class="field-error" aria-live="polite"></span></p>
+          <p><label for="email">Email address</label><br>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <span id="email-error" class="field-error" aria-live="polite"></span></p>
+        </fieldset>
+        <fieldset>
+          <legend>How you would like to help</legend>
+          <p><label for="interest">Interest type</label><br>
+          <select id="interest" name="interest" required>
+            <option value="">Select an option</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="foster">Foster</option>
+            <option value="adoption">Adoption information</option>
+          </select>
+          <span id="interest-error" class="field-error" aria-live="polite"></span></p>
+          <p><label for="availability">Availability</label><br>
+          <input id="availability" name="availability" type="text" required
+            placeholder="Example: Weekends">
+          <span id="availability-error" class="field-error" aria-live="polite"></span></p>
+          <p><label for="experience">Experience with pets</label><br>
+          <textarea id="experience" name="experience" rows="3" required></textarea>
+          <span id="experience-error" class="field-error" aria-live="polite"></span></p>
+          <p><label for="message">Short message</label><br>
+          <textarea id="message" name="message" rows="4" required
+            minlength="10"></textarea>
+          <span id="message-error" class="field-error" aria-live="polite"></span></p>
+        </fieldset>
+        <div class="form-actions">
+          <button type="submit">Check my inquiry</button>
+          <button id="clear-draft" class="secondary-button" type="button">Clear my draft</button>
+        </div>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+    <section aria-labelledby="area-heading">
+      <h2 id="area-heading">Service area and office hours</h2>
+      <p>We serve the Minneapolis and Saint Paul area and nearby Twin Cities communities.</p>
+      <p>Sample office hours for this class project: Monday through Friday, 9 a.m. to 5 p.m.;
+        Saturday, 10 a.m. to 2 p.m.; closed Sunday.</p>
+      <p>Please contact the rescue before visiting to confirm current hours and arrange a
+        meeting.</p>
+    </section>
+    </div>
+  </main>
+  <footer><p>&copy; 2026 Twin Cities Animal Rescue</p></footer>
+</body>
+</html>
